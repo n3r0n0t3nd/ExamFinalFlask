@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+  <section class="formulario">
+    <h1>Inicio de sesión</h1>
+
+    <form method="post">
+      <label>Ingresa tu nombre</label>
+      <input type="text" name="usuario" value="{{ request.form.usuario }}" required>
+
+      <label>Ingresa tu contraseña</label>
+      <input type="password" name="clave" required>
+
+      <button type="submit" class="calcular">Verificar</button>
+    </form>
+
+    {% if mensaje %}
+      <div class="resultado">
+        <p>{{ mensaje }}</p>
+      </div>
+    {% endif %}
+  </section>
+{% endblock %}

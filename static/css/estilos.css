@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  background: #efefef;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Menú principal */
+.menu { display: flex; gap: 12px; }
+
+.boton {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.boton-morado { background: #b00fb0; }
+.boton-verde { background: #8dc921; }
+
+/* Formularios */
+.formulario {
+  background: #fff;
+  width: 100%;
+  max-width: 540px;
+  padding: 28px 20px;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+}
+
+.formulario h1 { color: #333; font-size: 2.2rem; }
+
+.formulario label {
+  display: block;
+  margin: 14px 0 6px;
+  color: #555;
+}
+
+.formulario input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+.calcular {
+  margin-top: 18px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.resultado { text-align: left; margin-top: 10px; }
